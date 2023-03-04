@@ -1,6 +1,5 @@
 package org.chad.IocDiAnnotation;
 
-import org.chad.IocDiXml.CricketCoach;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class AnnotationDemoApp {
@@ -12,6 +11,7 @@ public class AnnotationDemoApp {
         Coach coach=context.getBean("thatSillyCoach",Coach.class);
 
         System.out.println(coach.getDailyWorkout());
+        System.out.println(coach.getDailyFortune());
 
         Coach coach1=context.getBean("newCricketCoach", Coach.class);
 

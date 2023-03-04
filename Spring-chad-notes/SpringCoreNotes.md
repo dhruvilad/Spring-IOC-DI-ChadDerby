@@ -66,20 +66,3 @@ Steps:
 ![img_8.png](img_8.png)
 
 ![img_9.png](img_9.png)
-
-#  **Annotation based configuration** ########
-
-**Component Scanning**
-- Enable component scanning in Spring config file
-- Add the @Component Annotation to your Java Classes
-- retrieve bean from spring container
-
-![img_16.png](img_16.png)
-
-![img_17.png](img_17.png)
-
-![img_18.png](img_18.png)
-
-- Spring also supports Defaukt Bean IDs
-- Default bean id : the class name, make first letter lower-case
-  - e.g Class Name is **TennisCoach**  then Default bean Id is **tennisCoach**

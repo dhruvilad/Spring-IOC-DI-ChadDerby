@@ -1,2 +1,3 @@
+org.chad.IocDiAnnotation.HappyFortuneService=org.springframework.stereotype.Component
 org.chad.IocDiAnnotation.NewCricketCoach=org.springframework.stereotype.Component
 org.chad.IocDiAnnotation.TennisCoach=org.springframework.stereotype.Component
