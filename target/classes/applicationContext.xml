@@ -24,6 +24,11 @@
           class="org.chad.CricketCoach">
 
         <property name="fortuneService" ref="myFortune"/>
+
+        <!-- Injecting literal values-->
+        <property name="emailAddress" value="test@gmail.com"/>
+        <property name="team" value="Mumbai Indians"/>
+
     </bean>
 
     <bean id="myLoggerConfig" class="org.chad.MyLoggerConfig" init-method="initLogger">

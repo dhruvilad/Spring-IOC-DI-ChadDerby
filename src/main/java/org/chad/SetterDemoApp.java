@@ -9,10 +9,12 @@ public class SetterDemoApp {
         ClassPathXmlApplicationContext context=
                 new ClassPathXmlApplicationContext("applicationContext.xml");
 
-        Coach coach=context.getBean("cricketCoach", CricketCoach.class);
+        CricketCoach coach=context.getBean("cricketCoach", CricketCoach.class);
 
         System.out.println(coach.getDailyWorkout());
         System.out.println(coach.getDailyFortune());
 
+        //call to literal values
+        System.out.println(coach.getEmailAddress() +"  "+coach.getTeam());
     }
 }
