@@ -43,4 +43,15 @@ Steps:
 - Define the dependency interface and class
 - create a constructor in your class for injections
 - configure the depnedency injection in spring config file
+
+
+**Setter Injection**
+
+Steps:
+- Create setter method(s) in your class for injections
+- Configure the dependency injection in spring config file
+
+    ![img_6.png](img_6.png)
+
+
  

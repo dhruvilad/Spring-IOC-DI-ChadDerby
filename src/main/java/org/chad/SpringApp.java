@@ -20,6 +20,7 @@ public class SpringApp {
         //let's call our new method
         System.out.println(coach.getDailyFortune());
 
+
         //close  the context
         context.close();
     }
