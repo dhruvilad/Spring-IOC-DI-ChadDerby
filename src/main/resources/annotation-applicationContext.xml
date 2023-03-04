@@ -7,21 +7,10 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <!-- Define your beans here -->
-    <bean id="myCoach"
-        class="org.chad.IocDiXml.TrackCoach"
-        init-method="doMyStartupStuff"
-          destroy-method="doMyCleanupStuff"
-    >
+    <!-- add entry to enable component scanning-->
+    <context:component-scan base-package="org.chad"/>
 
-        <!-- set up constructor injection -->
-        <constructor-arg ref="myFortune"/>
 
-    </bean>
-
-    <!-- define the dependency -->
-    <bean id="myFortune"
-          class="org.chad.IocDiXml.HappyFortuneService"></bean>
 
     <bean id="myLoggerConfig" class="org.chad.IocDiXml.MyLoggerConfig" init-method="initLogger">
         <property name="rootLoggerLevel" value="FINE" />

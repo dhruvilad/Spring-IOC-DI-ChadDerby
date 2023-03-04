@@ -12,7 +12,7 @@
 
     <!-- Define your beans here -->
     <bean id="myCoach"
-        class="org.chad.TrackCoach">
+        class="org.chad.IocDiXml.TrackCoach">
 
         <!-- set up constructor injection -->
         <constructor-arg ref="myFortune"/>
@@ -21,10 +21,10 @@
 
     <!-- define the dependency -->
     <bean id="myFortune"
-          class="org.chad.HappyFortuneService"></bean>
+          class="org.chad.IocDiXml.HappyFortuneService"></bean>
 
     <bean id="cricketCoach"
-          class="org.chad.CricketCoach">
+          class="org.chad.IocDiXml.CricketCoach">
 
         <property name="fortuneService" ref="myFortune"/>
 
@@ -34,7 +34,7 @@
 
     </bean>
 
-    <bean id="myLoggerConfig" class="org.chad.MyLoggerConfig" init-method="initLogger">
+    <bean id="myLoggerConfig" class="org.chad.IocDiXml.MyLoggerConfig" init-method="initLogger">
         <property name="rootLoggerLevel" value="FINE" />
         <property name="printedLoggerLevel" value="FINE"/>
     </bean>
