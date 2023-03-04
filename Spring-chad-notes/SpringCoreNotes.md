@@ -54,4 +54,17 @@ Steps:
     ![img_6.png](img_6.png)
 
 
+**Injecting values from property file**
+
+Steps:
+- Create Properties File
+- Load Properties File in Spring config file
+- Reference values from Properties file
  
+![img_7.png](img_7.png)
+
+![img_8.png](img_8.png)
+
+![img_9.png](img_9.png)
+
+
