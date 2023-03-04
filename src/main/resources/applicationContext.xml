@@ -9,8 +9,16 @@
 
     <!-- Define your beans here -->
     <bean id="myCoach"
-        class="org.chad.BaseballCoach">
+        class="org.chad.TrackCoach">
+
+        <!-- set up constructor injection -->
+        <constructor-arg ref="myFortune"/>
+
     </bean>
+
+    <!-- define the dependency -->
+    <bean id="myFortune"
+          class="org.chad.HappyFortuneService"></bean>
 
     <bean id="cricketCoach"
           class="org.chad.CricketCoach"></bean>
