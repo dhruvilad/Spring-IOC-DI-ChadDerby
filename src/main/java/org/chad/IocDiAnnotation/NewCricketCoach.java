@@ -1,6 +1,7 @@
 package org.chad.IocDiAnnotation;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -13,6 +14,7 @@ public class NewCricketCoach implements Coach{
     }
 
     @Autowired
+    @Qualifier("restFortuneService")
     public void setFortuneService(FortuneService fortuneService) {
         System.out.println("autoworing using setter in newcricket");
         this.fortuneService = fortuneService;
