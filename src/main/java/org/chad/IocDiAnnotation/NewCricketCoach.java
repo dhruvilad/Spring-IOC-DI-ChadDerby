@@ -5,6 +5,9 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
 @Component
 @Scope("prototype")
 public class NewCricketCoach implements Coach{
@@ -31,5 +34,16 @@ public class NewCricketCoach implements Coach{
     @Override
     public String getDailyFortune() {
         return null;
+    }
+
+
+    @PostConstruct
+    public  void doInitSTuff(){
+        System.out.println("post construct called in  cricketcoach");
+    }
+
+    @PreDestroy
+    public  void doDestroySTuff(){
+        System.out.println("pre destroy called in  cricketcoach");
     }
 }
