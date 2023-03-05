@@ -1,5 +1,6 @@
 package org.chad.IocDiAnnotation;
 
+import org.chad.Coach;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Scope;
@@ -10,7 +11,7 @@ import javax.annotation.PreDestroy;
 
 @Component
 @Scope("prototype")
-public class NewCricketCoach implements Coach{
+public class NewCricketCoach implements Coach {
 
     private FortuneService fortuneService;
 

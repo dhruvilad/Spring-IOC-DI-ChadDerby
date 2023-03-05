@@ -4,3 +4,5 @@ org.chad.IocDiAnnotation.NewCricketCoach=org.springframework.stereotype.Componen
 org.chad.IocDiAnnotation.RandomService=org.springframework.stereotype.Component
 org.chad.IocDiAnnotation.RestFortuneService=org.springframework.stereotype.Component
 org.chad.IocDiAnnotation.TennisCoach=org.springframework.stereotype.Component
+org.chad.IocDiJavaConf.SportConfig=org.springframework.stereotype.Component
+org.chad.MyLoggerConfig=org.springframework.stereotype.Component

@@ -1,5 +1,7 @@
 package org.chad.IocDiXml;
 
+import org.chad.Coach;
+
 public class CricketCoach implements Coach {
 
     private FortuneService fortuneService;

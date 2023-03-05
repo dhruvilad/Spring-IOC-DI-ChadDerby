@@ -1,4 +1,4 @@
-package org.chad.IocDiAnnotation;
+package org.chad;
 
 public interface Coach {
 

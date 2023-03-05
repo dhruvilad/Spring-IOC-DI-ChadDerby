@@ -1,5 +1,7 @@
 package org.chad.IocDiXml;
 
+import org.chad.Coach;
+
 /**
  * Hello world!
  *

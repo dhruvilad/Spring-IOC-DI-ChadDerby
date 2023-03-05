@@ -1,5 +1,6 @@
 package org.chad.IocDiAnnotation;
 
+import org.chad.Coach;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class AnnotationDemoApp {
